@@ -32,13 +32,6 @@ if(type(x) == int): print("it is a int")
 if(type(x) == str): print("it is a string")
 if(type(x) == float): print("it is a float")
 
-#%% multiline
-mystr = """
-            ABC
-            Hi
-
-        """
-print(mystr)
 
 #%% round()
 print(round(10))
