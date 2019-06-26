@@ -13,7 +13,9 @@ print(new_list_filter)
 
 
 #%% Example map
-new_list_map = list(map(lambda x: x * 2 , sequence))
+double_it = lambda arg: arg * 2
+
+new_list_map = list(map(double_it, sequence))
 print(new_list_map)
 
 #%%

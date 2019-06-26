@@ -8,13 +8,16 @@ print(website)
 # multiple
 a, b, c = 5, 3.2, "Hello"
 
+# w = "same" + str(a)
+# x = y = z = "same" + str(a)
+
+w = "same"
 x = y = z = "same"
-print (x)
-print (y)
-print (z)
-print(id(x))
-print(id(y))
-print(id(z))
+
+display_ref(w)
+display_ref(x)
+display_ref(y)
+display_ref(z)
 
 #%% Call by Reference
 l=[8, 11]
