@@ -1,9 +1,7 @@
 #%% displayHelper
-def describe(myVar):
-    print(myVar, "is of type", type(myVar))
+from CrashCourse.displayhelper import *
 
 #%% Numbers
-
 number = 5
 describe(number)
 

@@ -1,3 +1,6 @@
+#%% displayHelper
+from CrashCourse.displayhelper import *
+
 #%% Variables
 website = "sdx-ag.de"
 print(website)
@@ -14,24 +17,32 @@ print(id(y))
 print(id(z))
 
 #%% Call by Reference
+l=[8, 11]
+display_ref(l)
+
+l[0] = 10
+display_ref(l)
+
+l.append(12)
+display_ref(l)
+
 def doStuff(list):
-    print(id(list))
-   
-l=[10, 11]
-print(id(x))
-l.append(20)
-print(id(l))
+    display_ref(l)
+
 doStuff(l)
 
 # https://www.python-course.eu/passing_arguments.php
 
 #%% Constants
-# Create a constant.py in a module
+# Create a constant.py
 import CrashCourse.aBasics.constant as constant
 # import constant
 print(constant.PI)
 print(constant.GRAVITY)
 
+from CrashCourse.aBasics.constant import *
+print(PI)
+print(GRAVITY)
 
 #%% multiline
 mystr = """

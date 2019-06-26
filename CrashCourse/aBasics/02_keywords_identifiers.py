@@ -1,26 +1,29 @@
+#%% displayHelper
+from CrashCourse.displayhelper import *
+
 #%% Keywords
 import keyword
 print(keyword.kwlist)
 
 #%% Keywords-Example
-print("1 == 1" + ": " + str(1 == 1))
-print("5 > 3" + ": " + str(5 > 3))
-print("True or False" + ": " + str(True or False))
-print("10 <= 1" + ": " + str(10 <= 1))
-print("3 > 7" + ": " + str(3 > 7))
+display_ev("1 == 1", 1 == 1)
+display_ev("5 > 3", 5 > 3)
+display_ev("True or False", True or False)
+display_ev("10 <= 1", 10 <= 1)
+display_ev("3 > 7", 3 > 7)
 
 #%% Keywords-Example-TrueFalse
-print("True and False" + ": " + str(True and False))
-print("True == 1" + ": " + str(True == 1))
-print("False == 0" + ": " + str(False == 0))
-print("True + True" + ": " + str(True + True))
+display_ev("True and False", True and False)
+display_ev("True == 1", True == 1)
+display_ev("False == 0", False == 0)
+display_ev("True + True", True + True)
 
 #%% Keywords-Example-None
 # is null in c#
-print(" None == 0" + ": " + str( None == 0))
-print("None == []" + ": " + str(None == []))
-print("None == False" + ": " + str(None == False))
-print("None == None" + ": " + str(None == None))
+display_ev("None == 0" , None == 0)
+display_ev("None == []" , None == [])
+display_ev("None == False" , None == False)
+display_ev("None == None" , None == None)
 
 
 #%% Identifier
