@@ -12,4 +12,4 @@ condition = True
 def statement(stuff="DEFAULT"):
     print(stuff)
 
-sequence = ["A", "B", "D", "E"]
+sequence = [1, 2, 3, 4]
