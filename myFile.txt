@@ -1,6 +1,0 @@
-ABC
-CDE
-EFG
-.NEt
-VSCode
-.NET Core

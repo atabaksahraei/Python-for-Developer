@@ -1,24 +1,24 @@
 def write(text):
-    with open("myFile.txt", "w") as file:
+    with open("./myFile.txt", "w") as file:
         file.write(text)
 
 def append(text):
-    with open("myFile.txt", "a") as file:
+    with open("./myFile.txt", "a") as file:
         file.write(text)
 
 def readDirty():
-    file = open("myFile.txt", "r")
+    file = open("./myFile.txt", "r")
     content = file.readlines()
     file.close()
     return content  
 
 def read():
-    with open("myFile.txt", "r") as file:
+    with open("./myFile.txt", "r") as file:
         for l in file:
-            yield l
+            yield l #-> generator
 
 def printFile():
-    with open("myFile.txt", "r") as file:
+    with open("./myFile.txt", "r") as file:
         for line in file:
             print(line.strip())
 

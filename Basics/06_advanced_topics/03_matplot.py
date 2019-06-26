@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 def read():
-    with open("./Kursmaterialien/data/names.csv") as file:
+    with open("./names.csv") as file:
         for line in file:
             yield line.strip().split(",")
 

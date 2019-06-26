@@ -8,7 +8,6 @@ from .entity.Author import Author
 from .entity.Tag import Tag
 
 class FFCrawler():
-
 # "html.parser" -> ist nicht das schnellste, aber bereits in python integriert
     def __init__(self, parser = "html.parser"):
         self.result = CrawlerResult()
@@ -25,10 +24,10 @@ class FFCrawler():
         all_posts = requests.get("https://www.sdx-ag.de/wp-admin/admin-ajax.php?action=load_more_posts")
         all_posts_json = json.loads(all_posts.content)
         for data in all_posts_json["data"]:
-            author = self.__parse_author(BeautifulSoup(data["img"], self.Parser))
+            author = self.__parse_author(BeautifulSoup(data["img"], self.parser))
             author.name = data["author_name"].strip()
 
-            tags = self.__parse_tags(BeautifulSoup(data["tags"], self.Parser))
+            tags = self.__parse_tags(BeautifulSoup(data["tags"], self.parser))
             
             post = Post()
             post.title = data["title"].strip()
@@ -43,7 +42,7 @@ class FFCrawler():
             self.result.authors.append(author)
 
     def __parse_html(self, html):
-        doc = BeautifulSoup(html, self.Parser)
+        doc = BeautifulSoup(html, self.parser)
         for article in doc.find_all("article"):
             author = self.__parse_author(article)
             tags = self.__parse_tags(article)

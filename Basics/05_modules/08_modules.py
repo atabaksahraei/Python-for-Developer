@@ -1,3 +1,8 @@
+# python modules: https://docs.python.org/3/py-modindex.html
+import sys
+print(sys.version)
+
+
 # import -> wird einmal vom Kernel ausgeführt; Funktionen sind verfügbar
 
 ##### import modules

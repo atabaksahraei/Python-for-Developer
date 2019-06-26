@@ -2,7 +2,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-class FlurfunkParser():
+class FFCrawler():
     def __init__(self):
         self.result = Result()
         self.result.posts = []
@@ -12,11 +12,11 @@ class FlurfunkParser():
     def remove_duplicates(self):
         self.result.tags = list(dict.fromkeys(self.result.tags))
 
-    def parse_frontend(self):
+    def crawle_frontend(self):
         websiteContent = requests.get("https://www.sdx-ag.de/flurfunk/")
-        self.__parsehtml(websiteContent.text)
+        self.__crawlehtml(websiteContent.text)
 
-    def parse_deep(self):
+    def crawle_deep(self):
         all_posts = requests.get("https://www.sdx-ag.de/wp-admin/admin-ajax.php?action=load_more_posts")
         all_posts_json = json.loads(all_posts.content)
         for data in all_posts_json["data"]:
@@ -37,7 +37,7 @@ class FlurfunkParser():
             self.result.posts.append(post)
             self.result.authors.append(author)
 
-    def __parsehtml(self, html):
+    def __crawlehtml(self, html):
         doc = BeautifulSoup(html, "html.parser")
         for article in doc.find_all("article"):
             author = self.__parse_author(article)
@@ -92,9 +92,9 @@ class Author():
 
 # "html.parser" -> ist nicht das schnellste, aber bereits in python integriert
 
-parser = FlurfunkParser()
-# parser.parse_frontend()
-parser.parse_deep()
-parser.remove_duplicates()
-result = parser.result
+crawler = FFCrawler()
+crawler.crawle_frontend()
+#crawler.crawle_deep()
+crawler.remove_duplicates()
+result = crawler.result
 
