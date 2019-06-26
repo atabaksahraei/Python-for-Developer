@@ -27,7 +27,8 @@ doStuff(l)
 
 #%% Constants
 # Create a constant.py in a module
-import Basics.Basics.constant as constant
+import Basics.aBasics.constant as constant
+# import constant
 print(constant.PI)
 print(constant.GRAVITY)
 
