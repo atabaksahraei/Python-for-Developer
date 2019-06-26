@@ -11,3 +11,5 @@ def display_ev(desc, term):
 condition = True
 def statement(stuff="DEFAULT"):
     print(stuff)
+
+sequence = ["A", "B", "D", "E"]
