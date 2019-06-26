@@ -1,3 +1,7 @@
+#%% displayHelper
+def describe(myVar):
+    print(myVar, "is of type", type(myVar))
+
 #%% Cast -> int()
 x = int(1)   # x will be 1
 y = int(2.8) # y will be 2
@@ -39,3 +43,12 @@ print(round(10.7))
 print(round(5.5))
 print(round(2.665, 2))
 print(round(2.675, 2))
+
+#%% sequence
+list = [1,2,3]
+complexList = [[1, "A"], [2, "B"]]
+describe(set(list))
+describe(tuple(list))
+describe(tuple(set(list)))
+describe(dict(complexList))
+
