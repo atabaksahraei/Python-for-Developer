@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+    "python.pythonPath": "C:\\Users\\sahraeiat\\AppData\\Local\\conda\\conda\\envs\\tensorflow-gpu\\python.exe",
     "python.formatting.provider": "black"
 }
