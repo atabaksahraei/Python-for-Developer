@@ -27,14 +27,6 @@ describe(x)
 describe(y)
 describe(z)
 
-
-#%% round()
-print(round(10))
-print(round(10.7))
-print(round(5.5))
-print(round(2.665, 2))
-print(round(2.675, 2))
-
 #%% sequence
 list = [1,2,3]
 complexList = [[1, "A"], [2, "B"]]
@@ -43,6 +35,9 @@ describe(tuple(list))
 describe(tuple(set(list)))
 describe(dict(complexList))
 
-
-
-#%%
+#%% round()
+print(round(10))
+print(round(10.7))
+print(round(5.5))
+print(round(2.665, 2))
+print(round(2.675, 2))
