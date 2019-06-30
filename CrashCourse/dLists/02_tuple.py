@@ -1,4 +1,4 @@
-
+#%%Tuple
 #Tuple immutable (readonly)
 t = ("Hans", 22, "IT")
 print(t)
@@ -8,6 +8,7 @@ print (name)
 print (age)
 print (subject)
 
+#%% Tuple unpacking
 students = [
     ("Hans", 22, "IT"),
     ("Peter", 18, "Arts")
