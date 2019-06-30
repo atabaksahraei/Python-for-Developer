@@ -14,8 +14,9 @@ students = [
     ("Peter", 18, "Arts")
 ]
 
-# for student in students:
-#     name, age, subject = student
-#     print(name)
+for student in students:
+    name, age, subject = student
+    print(name)
+
 for name, age, subject in students:
     print (name)

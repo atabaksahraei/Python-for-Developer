@@ -22,5 +22,6 @@ for key in d:
     print(key)
 
 print (d.items())
+
 for key, value in d.items():
     print (key + ": " + str(value))
