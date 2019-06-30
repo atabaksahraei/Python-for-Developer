@@ -4,7 +4,6 @@
 import sys
 print(sys.version)
 
-
 ## import 
 # -> wird einmal vom Kernel ausgeführt; Funktionen sind verfügbar
 
@@ -14,7 +13,6 @@ hello.welt()
 hello.mars()
 
 # import methods
-#from hello import * !!!Nicht Empfehlenswert!!!
 from hello import welt, mars
 welt()
 mars()
@@ -24,7 +22,7 @@ from hellom import some_file as fl
 fl.f()
 
 
-from hellom import *
+from hellom import * # !!!Nicht Empfehlenswert!!!
 some_file.f()
 
 import hellom
