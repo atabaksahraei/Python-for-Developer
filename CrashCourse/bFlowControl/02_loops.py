@@ -17,7 +17,7 @@ else:
 
 #%% for short
 print(sequence)
-output = [var == "B" for var in sequence]
+output = [var >= 5 for var in sequence]
 print(output)
 
 #%% while
