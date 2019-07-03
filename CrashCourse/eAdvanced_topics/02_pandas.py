@@ -54,4 +54,7 @@ data = pd.DataFrame(data) # new df
 data.rename(columns={0:"day", 1:"tip_sum"}, inplace=True) #inplace
 print(data)
 plt.plot(data["day"], data["tip_sum"])
+plt.legend() # label
 plt.show()
+
+#%%
