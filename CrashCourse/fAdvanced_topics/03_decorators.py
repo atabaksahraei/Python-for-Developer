@@ -2,21 +2,22 @@
 from CrashCourse.displayhelper import *
 
 #%% decorator pattern
-def make_pretty(func):
-    def inner():
-        print("I got decorated")
+def make_pretty(func, msg):
+    message = msg
+    def inner(): # closures: inner func which has access to local scope
+        print("I got decorated: {}".format(msg))
         func()
     return inner
 
 def ordinary():
     print("I am ordinary")
 
-ord = ordinary
-describe(ord)
+describe(ordinary)
 
-inner = make_pretty(ord)
+inner = make_pretty(ordinary, "Hi :)")
 describe(inner)
 
+inner()
 inner()
 
 #%% decorator in python
