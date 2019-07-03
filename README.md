@@ -15,3 +15,8 @@ len
 # todo DataSience
 
 # todo DeepLearning
+
+
+
+REF:
+https://www.programiz.com/python-programming/object-oriented-programming
