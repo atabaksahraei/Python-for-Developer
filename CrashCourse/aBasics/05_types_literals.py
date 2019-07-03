@@ -25,8 +25,9 @@ describe(str_multiline)
 
 describe(str[0:3])
 
-# strings are immutable
-# str[0] = "A" # Generates error
+#%% strings are immutable
+str = "SDX-AG"
+str[0] = "A" # error!
 
 #%% List
 # List is an ordered sequence of items.
@@ -46,7 +47,8 @@ set = { 5, 2, 3, 1, 4}
 describe(set)
 
 #%% Dictionary
-# Dictionary is an unordered collection of key-value pairs.
+# Dictionary is an unordered collection of unique items same as set.
+# Difference to set: list of key-value pairs.
 dict = {"key1":"value1",2:"value2", "key3":False}
 describe(dict)
 

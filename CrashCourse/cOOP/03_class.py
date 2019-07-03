@@ -27,7 +27,7 @@ class Person:
     def __format__(self, format):
         if format == "D":
             return "{}:{} is {} years old.".format(self.__id, self.name, self.age)
-        elif format == None:    
+        elif format == None or format == "":    
             return "{} is {} years old.".format(self.name, self.age)
 
         return "{}:{} ({}).".format(self.__id, self.name, format)
@@ -58,11 +58,12 @@ print(str(person))
 print(person)
 
 #%% __repr__
-person # type in console
+person
 
 #%% __len__
 print(len(person))
 
 #%% Deleting Attributes
+#del person.__id
 del person.name
 print(person)
