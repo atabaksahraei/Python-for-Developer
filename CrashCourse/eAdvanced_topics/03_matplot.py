@@ -1,3 +1,7 @@
+#%% displayHelper
+from CrashCourse.displayhelper import *
+
+#%% 
 import matplotlib.pyplot as plt
 
 def read():

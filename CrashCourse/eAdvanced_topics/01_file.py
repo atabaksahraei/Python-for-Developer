@@ -1,3 +1,4 @@
+#%% File
 def write(text):
     with open("./myFile.txt", "w") as file:
         file.write(text)
