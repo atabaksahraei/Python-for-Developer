@@ -1,5 +1,7 @@
-#%%Tuple
-#Tuple immutable (readonly)
+#%% displayHelper
+from CrashCourse.displayhelper import *
+
+#%%Tuple (immutable)
 t = ("Hans", 22, "IT")
 print(t)
 print(t[0])
