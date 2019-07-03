@@ -27,7 +27,7 @@ print(sys.version)
 # - NumPy (large, multi-dimensional arrays)
 # - Matplotlib (Plotting library)
 # - SciPy (mathematical functions)
-# - pandas (csv)
+# - pandas (csv/excel)
 
 # ML-Stack
 # - Scikit Learn (ML-Framewok)
