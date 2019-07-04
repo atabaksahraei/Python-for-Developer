@@ -7,6 +7,10 @@ https://en.wikibooks.org/wiki/Python_Programming/Lists
 
 len
 
+- python static code analysis (pylint)
+- Multithreaded Programming
+- Background Threat: http://sebastiandahlgren.se/2014/06/27/running-a-method-as-a-background-thread-in-python/
+
 # todo Web
 - flask
 - SQLAlchemy

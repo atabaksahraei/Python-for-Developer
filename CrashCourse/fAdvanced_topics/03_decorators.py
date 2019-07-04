@@ -5,7 +5,7 @@ from CrashCourse.displayhelper import *
 def make_pretty(func, msg):
     message = msg
     def inner(): # closures: inner func which has access to local scope
-        print("I got decorated: {}".format(msg))
+        print("I got decorated: {}".format(message))
         func()
     return inner
 
@@ -17,7 +17,6 @@ describe(ordinary)
 inner = make_pretty(ordinary, "Hi :)")
 describe(inner)
 
-inner()
 inner()
 
 #%% decorator in python
@@ -49,3 +48,5 @@ def printer(msg):
     print(msg)
 
 printer("Hello")
+
+#%%
