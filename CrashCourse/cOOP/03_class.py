@@ -28,9 +28,9 @@ class Person:
         if format == "D":
             return "{}:{} is {} years old.".format(self.__id, self.name, self.age)
         elif format == None or format == "":    
-            return "{} is {} years old.".format(self.name, self.age)
+            return f"{self.name} is {self.age} years old."
 
-        return "{}:{} ({}).".format(self.__id, self.name, format)
+        return f"{self.__id}:{self.name} ({format})."
 
     def __str__(self):
         return self.__format__("__str__")
