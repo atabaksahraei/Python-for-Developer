@@ -11,6 +11,5 @@ def hello():
 
 @app.errorhandler(404)
 @app.errorhandler(401)
-@app.errorhandler(500)
 def handle_all_error(err):
     return render_template("error.html", code=err.code, name=err.name, description=err.description)

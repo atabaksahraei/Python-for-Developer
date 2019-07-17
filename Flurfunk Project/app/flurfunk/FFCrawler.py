@@ -1,5 +1,6 @@
 import requests
 import json
+import numpy as np
 from bs4 import BeautifulSoup
 from .models import *
 
@@ -10,7 +11,8 @@ class FFCrawler():
         self.parser = parser
 
     def remove_duplicates(self):
-        self.result.tags = list(dict.fromkeys(self.result.tags))
+        self.result.tags = list(np.unique(self.result.tags))
+        self.result.authors = list(np.unique(self.result.authors))
 
     def crawl_frontend(self):
         websiteContent = requests.get("https://www.sdx-ag.de/flurfunk/")
