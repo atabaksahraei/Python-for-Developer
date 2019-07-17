@@ -1,11 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
-
-from .entity.CrawlerResult import CrawlerResult
-from .entity.Post import Post
-from .entity.Author import Author
-from .entity.Tag import Tag
+from .models import *
 
 class FFCrawler():
 # "html.parser" -> ist nicht das schnellste, aber bereits in python integriert

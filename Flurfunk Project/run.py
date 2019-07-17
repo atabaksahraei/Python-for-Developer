@@ -1,11 +1,7 @@
-import utils
-import flurfunk
+from app import utils, flurfunk
 from flask import Flask, escape, request, json
 
 app = Flask(__name__)
-
-with app.app_context():
-    pass # warming up
 
 @app.route("/")
 def hello():
