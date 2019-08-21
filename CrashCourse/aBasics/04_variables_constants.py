@@ -36,13 +36,18 @@ doStuff(l)
 
 # https://www.python-course.eu/passing_arguments.php
 
-#%% Constants
+#%% Constants (Not Recommended)
 # Create a constant.py
 import CrashCourse.aBasics.constant as constant
 # import constant
+print(constant.PI)
+constant.PI = 100
 print(constant.PI)
 print(constant.GRAVITY)
 
 from CrashCourse.aBasics.constant import *
 print(PI)
+PI = 100
+print(PI)
 print(GRAVITY)
+

@@ -1,7 +1,7 @@
 ﻿#%% displayHelper
 from CrashCourse.displayhelper import *
 
-#%% list slicing
+#%% list slicing (In C# 8 verfügbar!)
 numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "noise ~}9?"]
 
 print(numbers[0]) 
@@ -21,10 +21,11 @@ print("Hallo Welt"[:])
 
 #%% list comprehensions
 xs = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ys = []
+for x in xs:
+    ys.append(x*x)
+
 ys = [x*x for x in xs]
-# ys = []
-# for x in xs:
-#     ys.append(x*x)
 
 describe(ys)
 

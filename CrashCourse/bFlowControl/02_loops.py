@@ -12,6 +12,7 @@ for i in range(0, 5):
 #%% for/else
 for var in sequence:
     statement(var)
+    # break
 else:
     print("No items left.")
 

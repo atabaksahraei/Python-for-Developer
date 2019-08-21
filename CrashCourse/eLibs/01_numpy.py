@@ -33,7 +33,7 @@ tuple = (4, 2)
 reshape = a.reshape(tuple)
 print(reshape)
 print(reshape[0])
-print(a.reshape((-1, 2)))
+print(a.reshape((-1, 4)))
 
 #%% Reshape-> [][]->[]
 b = np.array([[1, 2, 3], [4, 5, 6]])

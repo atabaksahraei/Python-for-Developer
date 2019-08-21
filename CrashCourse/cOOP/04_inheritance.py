@@ -1,4 +1,4 @@
-#%% inheritance
+#%% single inheritance
 from datetime import date
 from dateutil.parser import parse as date_parser
 

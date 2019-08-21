@@ -39,6 +39,8 @@ describe(list[0])
 # Tuple is an ordered sequence of items same as list.
 # Difference to list: tuples are immutable.
 tuple = (1, "SDX-AG", 1+3j, 10e-3)
+describe(tuple[0])
+# tuple[0] = 2 # Error!
 describe(tuple)
 
 #%% Set

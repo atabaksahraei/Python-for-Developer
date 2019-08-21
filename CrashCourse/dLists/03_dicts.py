@@ -23,6 +23,18 @@ describe(students["IT"])
 del d["Berlin"]
 print(d)
 
+#%% dict in objects
+class Me:
+    pass
+me = Me()
+describe(me.__dict__)
+me.nAme = "myName"
+me.Name = "myName"
+describe(me.__dict__)
+del me.nAme
+describe(me.__dict__)
+
+wait = ""
 #%% dict if
 if "Friedberg" in d: print("Friedberg matched")
 if "Berlin" in d: print("Berlin matched")

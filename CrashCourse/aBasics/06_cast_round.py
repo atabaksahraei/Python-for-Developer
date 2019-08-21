@@ -28,7 +28,7 @@ describe(y)
 describe(z)
 
 #%% sequence
-list = [1,2,3]
+list = [1,2,3,3]
 complexList = [[1, "A"], [2, "B"]]
 describe(set(list))
 describe(tuple(list))
