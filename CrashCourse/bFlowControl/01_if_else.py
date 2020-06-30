@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% if
 if condition:
@@ -25,3 +26,4 @@ elif condition_2:
     statement("B")
 else:
     statement()
+

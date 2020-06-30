@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% Class
 from datetime import date

@@ -1,9 +1,10 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% why pandas
 import csv
-with open ("./data/tips.csv", "r") as file:
+with open ("../data/tips.csv", "r") as file:
      fileReader = csv.reader(file, delimiter = ',')
      counter = 0
      for line in fileReader:
@@ -15,12 +16,12 @@ with open ("./data/tips.csv", "r") as file:
 #%% read csv
 import pandas as pd
 
-df = pd.read_csv("./data/tips.csv")
+df = pd.read_csv("../data/tips.csv")
 df.head()
 
 #%% read excel
 df = None
-df = pd.read_excel("./data/tips.xlsx", sheet_name="billdata")
+df = pd.read_excel("../data/tips.xlsx", sheet_name="billdata")
 print(len(df))
 df.head()
 
@@ -57,4 +58,3 @@ plt.plot(data["day"], data["tip_sum"])
 plt.legend() # label
 plt.show()
 
-#%%

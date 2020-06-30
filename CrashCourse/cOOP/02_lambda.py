@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% Lambda
 myLambda = lambda arg: arg * 2
@@ -17,3 +18,4 @@ double_it = lambda num: num * 2
 
 new_list_map = list(map(double_it, sequence))
 print(new_list_map)
+

@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% Keywords
 import keyword

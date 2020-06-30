@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% Numbers
 number = 5
@@ -25,7 +26,7 @@ describe(str_multiline)
 
 describe(str[0:3])
 
-#%% strings are immutable
+#%% strings is a immutable (unchangeable object) char array
 str = "SDX-AG"
 str[0] = "A" # error!
 
@@ -40,7 +41,7 @@ describe(list[0])
 # Difference to list: tuples are immutable.
 tuple = (1, "SDX-AG", 1+3j, 10e-3)
 describe(tuple[0])
-# tuple[0] = 2 # Error!
+tuple[0] = 2 # Error!
 describe(tuple)
 
 #%% Set
@@ -81,3 +82,5 @@ multiline_str = """This is a
  code."""
 unicode = u"\u0053\u0044\u0058\u002d\u0041\u0047"
 raw_str = r"raw \n string" # -> in c#: @"raw \n string"
+
+# %%

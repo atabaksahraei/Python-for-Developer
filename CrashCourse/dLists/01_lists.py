@@ -1,5 +1,6 @@
 ﻿#%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% list slicing (In C# 8 verfügbar!)
 numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "noise ~}9?"]
@@ -43,4 +44,5 @@ list = [
 ]
 
 describe(list[0][1])
+
 

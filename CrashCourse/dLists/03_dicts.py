@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% dicts
 d = { "Berlin":123, "Helsinki":456, "Muenchen": 890 }

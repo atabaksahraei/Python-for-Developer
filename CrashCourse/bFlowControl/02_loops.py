@@ -1,5 +1,6 @@
 #%% displayHelper
-from CrashCourse.displayhelper import *
+%cd ".."
+from displayhelper import *
 
 #%% foreach
 for var in sequence:
@@ -7,7 +8,7 @@ for var in sequence:
 
 #%% for
 for i in range(0, 5):
-    statement(var)
+    statement(i)
 
 #%% for/else
 for var in sequence:
@@ -26,3 +27,4 @@ i = 0
 while i < 13:
     i += 1   
     statement("Tick: " + str(i))
+
